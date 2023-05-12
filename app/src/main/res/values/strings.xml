@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">IsaMed</string>
+
+    <string name="filter_description_msg">Please fill up the details to know the test result of the patient.</string>
+    <string name="fields_mandatory">*Fields mandatory</string>
+    <string name="optional_fields">*Optional Fields</string>
+    <string name="done">Done</string>
+    <string name="search">Search</string>
+    <string name="either_of_this_field_is_mandatory">*Either of this field is mandatory</string>
+    <string name="provider">Provider</string>
+    <string name="location">Location</string>
+    <string name="practice">Practice</string>
+    <string name="ssn">SSN</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="to">To</string>
+    <string name="todo">TODO</string>
+    <string name="filter">Filter</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="lab_orders">Lab Orders</string>
+    <string name="test_results">Test Results</string>
+    <string name="prescription">Prescription</string>
+    <string name="search_for_patient">Search For Patient</string>
+    <string name="schedule">Schedule</string>
+    <string name="home">Home</string>
+    <string name="sonograms">Sonograms</string>
+    <string name="submit">Submit</string>
+    <string name="lab_order">Lab Order</string>
+    <string name="order">Order</string>
+    <string name="nothing">Orders <font style="italic" color="#15992E"><span id="aa">are:</span></font></string>
+    <string name="date">Date</string>
+    <string name="colon">:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="documents">Documents</string>
+    <string name="patient_info">Patient Info</string>
+    <string name="payment">Payment</string>
+    <string name="test_result">Test Result</string>
+    <string name="laboratory">Laboratory</string>
+    <string name="date_colon">Date : </string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="terms_conditions_link"><u>Terms &amp; Conditions</u></string>
+    <string name="terms_conditions_text">All copyright, trade marks, design rights, patents and other intellectual property rights registered in and on Its networks, Inc content belong to same networks, Inc. Isanetworks, Inc reserves all of its rights in lsanetworks, Inc Content and lsanetworks, Inc Online Services. Nothing in the Terms grants you a right orlicense to use any trade mark, design right or copyright owned or nontrolled by Isanetworks, Inc or any other third party except as expressly provided in the Terms.</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="insurance_card">Insurance Card</string>
+    <string name="document_list">Document List</string>
+    <string name="next">Next</string>
+    <string name="diagnosis_list">Diagnosis List</string>
+    <string name="cpt_code_list">CPT Code List</string>
+    <string name="save">Save</string>
+    <string name="r87_610_atyp_squam_cell">R87.610 ATYP SQUAM CELL OF UNDET SIGNFC CYTO SMR CRVX (ASC-US)</string>
+    <string name="fees">Fees</string>
+    <string name="description">Description</string>
+    <string name="forgot_password_instruction">Forgot your password?\nEnter your email Id and we will send\nyou a new one !</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="name">Name</string>
+    <string name="subject">Subject</string>
+    <string name="contact_us_menu"><font color="#000000" >Contact Us</font></string>
+    <string name="logout_menu"><font color="#000000" >Logout</font></string>
+    <string-array name="programming_languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>CPP</item>
+    </string-array>
+
+</resources>

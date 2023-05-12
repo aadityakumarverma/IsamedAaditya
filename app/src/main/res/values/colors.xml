@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FF646cab</color>
+    <color name="purple_500">#FF3b56ad</color>
+    <color name="purple_700">#FF2643a9</color>
+    <color name="teal_200">#8caae8</color>
+    <color name="teal_700">#5d79ba</color>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#606060</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="themeColor">#5d79ba</color>
+    <color name="blue_action_bar_isamed">#5d79ba</color>
+    <color name="red_error">#d71f2b</color>
+    <color name="blue_isamed">#2643a9</color>
+    <color name="lightBlue_isamed">#646cab</color>
+    <color name="isamed_warning_color">#be2021</color>
+    <color name="description_color">#373737</color>
+    <color name="et_label_color">#5f74a9</color>
+    <color name="et_stroke_color">#030303</color>
+    <color name="separator_color">#d7d7d7</color>
+    <color name="gray_icon_color">#a2a2a2</color>
+    <color name="black_text_color">#696969</color>
+    <color name="gray_text_color">#858484</color>
+    <color name="button_color">#3b56ad</color>
+    <color name="tab_false_color">#ececec</color>
+    <color name="ll_bg_color">#F4F4F4</color>
+
+
+    android:fontFamily="@font/helvetica"
+
+</resources>

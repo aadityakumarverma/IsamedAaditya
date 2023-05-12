@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginVertical="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ 
+   
+    <TextView
+        android:id="@+id/tvPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WINTIRCH ELIZABETH"
+        android:lines="1"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helvetica"
+        />
+    <TextView
+        android:id="@+id/tvScheduleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:00 AM - 09:30 AM"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:lines="1"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helvetica"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Phone : "
+        android:lines="1"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helvetica"
+        />
+        <TextView
+            android:id="@+id/tvPatientPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="6468729504"
+            android:lines="1"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helvetica"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+        android:id="@+id/tvReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Reason : "
+        android:lines="1"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helvetica"
+        />
+    <TextView
+
+        android:id="@+id/tvPatientReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW PATIENT"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:lines="1"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helvetica"
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/separator_color"
+        />
+
+</LinearLayout>

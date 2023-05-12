@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ui.activities.SearchPatientResultActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/ll_logo"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/blue_action_bar_isamed"
+            >
+            <ImageView
+                android:id="@+id/iv_backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/arrow_back" />
+            <TextView
+                android:id="@+id/tv_pageHeadAppointmentList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Patient List"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:id="@+id/iv_searchImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_weight="1"
+                android:padding="@dimen/_2sdp"
+                android:gravity="center"
+                android:src="@drawable/search_icon_white" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_goneSearchBar"
+            android:weightSum="7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5sdp"
+            android:background="@color/blue_action_bar_isamed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:weightSum="7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_1sdp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_blue_search_box"
+                    >
+                    <EditText
+                        android:id="@+id/et_goneSearchBox"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:fontFamily="@font/helvetica"
+                        android:textColor="@color/white"
+                        android:hint="@string/search"
+                        android:textSize="@dimen/_12sdp"
+                        android:background="@drawable/bg_blank"
+                        android:singleLine="true"
+                        android:maxLength="20"
+                        android:inputType="textCapSentences"
+                        android:gravity="center_vertical|start"/>
+                    <ImageView
+                        android:id="@+id/iv_goneSearchIcon"
+                        android:layout_weight="6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/search_icon_white"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_goneCrossIcon"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_3sdp"
+                android:src="@drawable/icon_cross_circle"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_searchedPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvPatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHAILA ALAM"
+            android:lines="1"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helvetica"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Phone : "
+                android:lines="1"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/helvetica"
+                />
+            <TextView
+                android:id="@+id/tv_phoneValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="3477849079"
+                android:lines="1"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/helvetica"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="DOB : "
+                android:lines="1"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/light_black"
+                android:fontFamily="@font/helvetica"
+                />
+            <TextView
+
+                android:id="@+id/tv_dobValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/06/1982"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:lines="1"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/light_black"
+                android:fontFamily="@font/helvetica"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/separator_color"
+        />
+</LinearLayout>

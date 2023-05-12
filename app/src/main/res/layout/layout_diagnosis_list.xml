@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/ll_diseaseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_8sdp">
+        <CheckBox
+            android:id="@+id/cb_disease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue_action_bar_isamed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tv_diseaseNameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica"
+            android:lines="2"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="N93.9 ABNORMAL UTERINE AND VAGINAL BLEEDING, UNSPECIFIED"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/separator_color"
+        />
+
+</LinearLayout>

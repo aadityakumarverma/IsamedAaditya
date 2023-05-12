@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ui.activities.PrescriptionAddActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_action_bar_isamed"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_5sdp"
+        android:weightSum="10"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_pageHeadFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/prescription"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/iv_prescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_write2"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_prescription">
+        <LinearLayout
+            android:id="@+id/ll_pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mandatory"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:id="@+id/tv_pharmacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica"
+                android:lines="1"
+                android:text="Pharmacy"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/et_label_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_filterDescription"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:id="@+id/et_pharmacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/edit_text_background"
+                android:lines="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_drug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mandatory"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:id="@+id/tv_drug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica"
+                android:lines="1"
+                android:text="Drug"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/et_label_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_filterDescription"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:id="@+id/et_drug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/edit_text_background"
+                android:lines="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_doseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mandatory"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:id="@+id/tv_doseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica"
+                android:lines="1"
+                android:text="Dose Type"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/et_label_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_filterDescription"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:id="@+id/et_doseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/edit_text_background"
+                android:lines="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mandatory"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:id="@+id/tv_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica"
+                android:lines="1"
+                android:text="Quantity"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/et_label_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_filterDescription"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:id="@+id/et_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/edit_text_background"
+                android:lines="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_refill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mandatory"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:id="@+id/tv_refill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica"
+                android:lines="1"
+                android:text="Refill"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/et_label_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_filterDescription"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:id="@+id/et_refill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/edit_text_background"
+                android:lines="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mandatory"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:id="@+id/tv_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica"
+                android:lines="1"
+                android:text="Direction"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/et_label_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_filterDescription"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:id="@+id/et_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/edit_text_background"
+                android:lines="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_daysSupply1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mandatory"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:id="@+id/tv_daysSupply1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/helvetica"
+                android:lines="1"
+                android:text="Days Supply 1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/et_label_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_filterDescription"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:id="@+id/et_daysSupply1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/edit_text_background"
+                android:lines="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="@font/helvetica"
+            android:background="@drawable/btn_bg"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
